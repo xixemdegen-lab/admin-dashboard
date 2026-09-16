@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="app.css" />
-        <link rel="icon" href="assets/icons/Favicon.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="assets/icons/Favicon.png" type="image/x-icon" />
         <title>Admin dashboard</title>
     </head>
     <body>
@@ -36,7 +36,7 @@
                             <img src="assets/icons/icon-bell.svg" alt="notification icon" />
                         </div>
 
-                        <div class="navbar__action-avatar rounded__btn">
+                        <div class="navbar__action-avatar">
                             <img src="assets/imgs/profile.JPG" alt="" />
                         </div>
 
@@ -243,9 +243,217 @@
                         </div>
                     </div>
 
-                    <div class="dashboard__grid-payment"></div>
+                    <!-- ------------------------------------------------------- -->
+                    <!-- ------------------------------------------------------- -->
+                    <!-- ------------------------------------------------------- -->
+                    <!-- ------------------------------------------------------- -->
+                    <!-- ------------------------------------------------------- -->
 
-                    <div class="dashboard__grid-payment__history"></div>
+                    <div class="dashboard__grid-payment">
+                        <div class="payment__goal"></div>
+
+                        <div class="credit__amount"></div>
+                    </div>
+
+                    <!-- ------------------------------------------------------ -->
+                    <!-- ------------------------------------------------------ -->
+                    <!-- ------------------------------------------------------ -->
+                    <!-- ------------------------------------------------------ -->
+                    <!-- ------------------------------------------------------ -->
+
+                    <div class="dashboard__grid-payment__history">
+                        <div>
+                            <div class="payment__history-header">
+                                <div class="-title">
+                                    <h2 class="card__heading">Payment History</h2>
+                                    <p class="balance-title">Recent payments history</p>
+                                </div>
+
+                                <div class="top__btn rounded__btn">
+                                    <img src="assets/icons/icon-external-link.svg" alt="" />
+                                </div>
+                            </div>
+
+                            <div class="payment__history-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Category</th>
+                                            <th>Date</th>
+                                            <th>Time</th>
+                                            <th>Status</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td class="name__container">
+                                                <img src="assets/icons/icon-amazon.svg" alt="" />
+                                                <div class="name-roa">
+                                                    <p>Amazon Shopping</p>
+                                                    <p>+18.67%</p>
+                                                </div>
+                                            </td>
+                                            <td>Online Purchase</td>
+                                            <td>15 Sep 2026</td>
+                                            <td>02:35 PM</td>
+                                            <td class="status__container">
+                                                <img src="assets/icons/icon-status-dot.svg" alt="" />
+                                                Successful
+                                            </td>
+                                            <td>$2,764.82</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="name__container">
+                                                <img src="assets/icons/icon-google-pay.svg" alt="" />
+                                                <div class="name-roa">
+                                                    <p>Google Pay</p>
+                                                    <p>+9.34%</p>
+                                                </div>
+                                            </td>
+                                            <td>Digital Payment</td>
+                                            <td>13 Sep 2026</td>
+                                            <td>10:18 AM</td>
+                                            <td class="status__container">
+                                                <img src="assets/icons/icon-status-dot.svg" alt="" />
+                                                Successful
+                                            </td>
+                                            <td>$326.12</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="name__container">
+                                                <img src="assets/icons/icon-uber.svg" alt="" />
+                                                <div class="name-roa">
+                                                    <p>Uber</p>
+                                                    <p>+12.23%</p>
+                                                </div>
+                                            </td>
+                                            <td>Transportation</td>
+                                            <td>11 Sep 2026</td>
+                                            <td>06:42 PM</td>
+                                            <td class="status__container">
+                                                <img src="assets/icons/icon-status-dot.svg" alt="" />
+                                                Successful
+                                            </td>
+                                            <td>$18.75</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="name__container">
+                                                <img src="assets/icons/icon-spotify.svg" alt="" />
+                                                <div class="name-roa">
+                                                    <p>Spotify Premium</p>
+                                                    <p>+6.82%</p>
+                                                </div>
+                                            </td>
+                                            <td>Subscription</td>
+                                            <td>08 Sep 2026</td>
+                                            <td>09:14 AM</td>
+                                            <td class="status__container">
+                                                <img src="assets/icons/icon-status-dot.svg" alt="" />
+                                                Successful
+                                            </td>
+                                            <td>$11.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="name__container">
+                                                <img src="assets/icons/icon-apple.svg" alt="" />
+                                                <div class="name-roa">
+                                                    <p>Apple Store</p>
+                                                    <p>+11.45%</p>
+                                                </div>
+                                            </td>
+                                            <td>Purchase</td>
+                                            <td>03 Sep 2026</td>
+                                            <td>04:27 PM</td>
+                                            <td class="status__container">
+                                                <img src="assets/icons/icon-status-dot.svg" alt="" />
+                                                Successful
+                                            </td>
+                                            <td>$4,299.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="name__container">
+                                                <img src="assets/icons/icon-netflix.svg" alt="" />
+                                                <div class="name-roa">
+                                                    <p>Netflix</p>
+                                                    <p>+14.72%</p>
+                                                </div>
+                                            </td>
+                                            <td>Subscription</td>
+                                            <td>28 Aug 2026</td>
+                                            <td>08:51 PM</td>
+                                            <td class="status__container">
+                                                <img src="assets/icons/icon-status-dot.svg" alt="" />
+                                                Successful
+                                            </td>
+                                            <td>$22.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="name__container">
+                                                <img src="assets/icons/icon-figma.svg" alt="" />
+                                                <div class="name-roa">
+                                                    <p>Figma</p>
+                                                    <p>+8.91%</p>
+                                                </div>
+                                            </td>
+                                            <td>Software</td>
+                                            <td>21 Aug 2026</td>
+                                            <td>11:36 AM</td>
+                                            <td class="status__container">
+                                                <img src="assets/icons/icon-status-dot.svg" alt="" />
+                                                Successful
+                                            </td>
+                                            <td>$72.00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="name__container">
+                                                <img src="assets/icons/icon-paypal.svg" alt="" />
+                                                <div class="name-roa">
+                                                    <p>payPal</p>
+                                                    <p>+16.38%</p>
+                                                </div>
+                                            </td>
+                                            <td>Transfer</td>
+                                            <td>14 Aug 2026</td>
+                                            <td>03:09 PM</td>
+                                            <td class="status__container">
+                                                <img src="assets/icons/icon-status-dot.svg" alt="" />
+                                                Successful
+                                            </td>
+                                            <td>$1,250.00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="name__container">
+                                                <img src="assets/icons/icon-dribble.svg" alt="" />
+                                                <div class="name-roa">
+                                                    <p>Dribble Design</p>
+                                                    <p>+7.64%</p>
+                                                </div>
+                                            </td>
+                                            <td>Design Service</td>
+                                            <td>27 jul 2026</td>
+                                            <td>01:48 PM</td>
+                                            <td class="status__container">
+                                                <img src="assets/icons/icon-status-dot.svg" alt="" />
+                                                Successful
+                                            </td>
+                                            <td>$82.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
