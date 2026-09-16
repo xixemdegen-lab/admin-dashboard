@@ -645,7 +645,7 @@ body {
 .apr__circle-inner__circle {
     width: 14px;
     height: 14px;
-    background: var(--color-primary);
+    background: var(--color-dark-blue);
     display: inline-block;
     border-radius: 50%;
 }
@@ -654,7 +654,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--color-primary);
+    background: var(--color-dark-blue);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -664,7 +664,7 @@ body {
     font-style: normal;
     font-size: var(--font-size-muted);
     color: var(--color-bg);
-    border: 2px solid var(--color-dark-blue);
+    border: 4px solid var(--color-primary);
 }
 
 .may {
@@ -695,7 +695,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 200px;
-    padding: 10px;
+    padding: 0 10px 10px 10px;
     background: var(--color-surface);
     border-radius: 22px;
 }
@@ -795,8 +795,169 @@ td {
     height: 100%;
     box-shadow: var(--btn-shadow);
 }
-/* .payment__goal {
+.payment__goal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.payment__goal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.goal__balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.goal__balance > p:nth-child(1) {
+    font-size: var(--font-size-muted);
+    color: var(--color-text-secondary);
+}
+.payment__balance {
+    font-size: calc(var(--font-size-heading) + 1rem);
+    font-weight: var(--font-weight-medium);
+}
+.payment__balance > span {
+    color: var(--color-text-secondary);
+}
 
-} */
-
-/* .credit__amount {} */
+.goal__chart {
+    margin-top: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.goal__chart-line {
+    display: block;
+    background-image: repeating-linear-gradient(to right, var(--color-text-secondary) 0 4px, transparent 2px 10px);
+    padding: 1px;
+    opacity: 0.2;
+}
+.chart {
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    bottom: 14%;
+}
+.goal__button {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    box-shadow: var(--btn-shadow);
+    border-radius: 50px;
+    background: var(--color-surface);
+    bottom: 0;
+    left: 29%;
+}
+.goal__button > button {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 18px;
+    font-size: var(--font-size-nav);
+    font-family: inherit;
+}
+.goal__button > button > img {
+    width: 20px;
+}
+.goal__button-send {
+    background: var(--color-primary);
+    border-radius: 50px;
+    border: 2px solid var(--color-dark-blue);
+    color: var(--color-surface);
+}
+.goal__button-receive {
+    background: var(--color-surface);
+    border-radius: 50px;
+    border: none;
+}
+.credit__amount {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 3fr;
+}
+.credit__amount-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+.credit__balance {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.credit__balance > div {
+    background: var(--color-primary);
+    padding: 14px 16px;
+    border-radius: 50px;
+    border: 2px solid var(--color-dark-blue);
+}
+.credit__balance > div > p {
+    font-size: var(--font-size-muted);
+    color: var(--color-bg);
+}
+.mandatory__payments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: linear-gradient(to top, var(--color-surface), var(--color-bg));
+    border-radius: 22px;
+    box-shadow: var(--btn-shadow);
+}
+.mandatory__payments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.mandatory__payments-btn {
+    background: var(--color-surface);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: var(--btn-shadow);
+}
+.avatar__container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+}
+.avatar__container > img,
+.avatar__container > div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+.avatar__container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-dark-blue);
+    margin-left: -20px;
+    border: 4px solid var(--color-primary);
+    color: var(--color-surface);
+    font-size: var(--font-size-nav);
+    font-weight: var(--font-weight-medium);
+}
+.avatar__container img ~ img {
+    margin-left: -20px;
+}
